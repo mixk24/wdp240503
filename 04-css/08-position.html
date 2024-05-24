@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <h1>position</h1>
+
+
+    <h1>relative</h1>
+    <div class="wrap">
+      <div class="base">
+        <div class="box relative1">relative1</div>
+      </div>
+      <div class="base">
+        <div class="box relative2">relative2</div>
+      </div>
+      <h1>apsolute</h1>
+      <div class="apsolute">
+        <div class="box apsolute">apsolute</div>
+        <div class="abs">
+          <div class="abs1"></div>
+        </div>
+
+      </div>
+      <h2>sticky</h2>
+      <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, harum. Obcaecati, in! Accusantium, similique, dolorem itaque provident blanditiis perferendis amet quas maxime veritatis corrupti cum, illum ab officia iure doloribus.
+
+      </div>
+      <h2>center</h2>
+      <div class="container2">
+        <div class="item"></div>
+      </div>
+      <style>
+        .container{
+          position: relative;
+          height: 300px;
+          background: lightslategray;
+
+        }
+        .item {
+
+          position: absolute;
+          top: 50%;
+          right: 50%;
+          width: 100px;
+          height: 100px;
+          background:blue;
+          /*margin: -50px 0 0 -50px;*/
+          transform: translate(-50%, -50%);
+        }
+      </style>
+
+      <h2>sticky</h2>
+      <div class="box sticky">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, harum. Obcaecati, in! Accusantium, similique, dolorem itaque provident blanditiis perferendis amet quas maxime veritatis corrupti cum, illum ab officia iure doloribus.
+
+      </div>
+        
+      </p>
+      <style>
+        .container {
+          position: relative;
+
+        }
+        .sticky {
+          position: sticky;
+          top: 0;
+          left: 0;
+          z-index: 100;
+
+        }
+        </style>
+
+      <h2>fixed</h2>
+      <header>header</header>
+      <style>
+        header{
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: 1000;
+          /*bottom: 0;
+          width: 100%;*/
+          height: 100px;
+          background: greenyellow;
+        }
+        </style>
+      <h2>relative</h2>
+      <div class="box">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+      </div>
+      <style>
+        .box3{
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 100px;height: 100px;background: rgb(230, 250, 250);
+        }
+        .box2{position: absolute;
+          top: 0;
+          left: 0;
+          width: 200px;height: 200px;background: lightpink;
+        }
+        .box1{
+          position: relative;
+          height: 500px;
+          background: lightcyan;
+
+        }
+      </style>
+
+      
+      <div class="box relative1">relative1</div>
+      <div class="box relative2">relative2</div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+
+    </div>
+    <style>
+      .abs1{
+        position: absolute;
+        top: 200px;
+        left: 200px;
+      }
+      .wrap{
+        position: relative;
+      }
+      .base {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background: lightgray;
+      }
+      .absolute {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+      }
+      .relative1 {
+        position: relative;
+        top: 50px;
+        left: 100px;
+      }
+      .relative2 {
+        position: relative;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background: red;
+      }
+      .wrap {
+        height: 200px;
+        background: lightblue;
+      }
+    </style>
+  </body>
+</html>

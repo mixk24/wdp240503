@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>display</title>
+</head>
+<body>
+<h1>display</h1>
+
+<h2>flex</h2>
+
+<h3>flex-items</h3>
+<style>
+  .basis {
+    display: flex;
+
+  }
+  .basis div {
+    flex-basis: auto;
+  }
+</style>
+<div class="flex basis">
+  <div>가</div>
+  <div>가나</div>
+  <div>가나다</div>
+</div>
+
+
+<style>
+  .shrink {
+    display: flex;
+  }
+  .shrink div[
+    width:100px;
+    min-width:0 !important;
+  ]
+  .shrink div:nth-child(3){
+    flex-shrink: 0;
+  }
+</style>
+<div class="flex shrink">
+  <div>item1</div>
+  <div>item2</div>
+  <div>item3</div>
+  <div>item4</div>
+  <div>item5</div>
+  <div>item6</div>
+  <div>item7</div>
+  <div>item8</div>
+</div>
+<style>
+  .wrap {
+    display: flex;
+  }
+  header {
+    width: 200px;
+    background: lightblue;
+  }
+  main {
+    width: 400px;
+    background: lightgoldenrodyellow;
+  }
+  .slide {
+    flex-grow: 1;
+    background: pink;
+  }
+</style>
+<div class="wrap">
+  <header>header</header>
+  <main>main</main>
+  <div class="slide">slide</div>
+
+</div>
+<style>
+ .order {
+  display: flex;
+ }
+ .order div:first-child {
+  order: 2;
+ }
+ .order div:nth-child(2) {
+  order: 3;
+ }
+ .order div:last-child {
+  order: 1;
+ }
+</style>
+<div class="flex order">
+  <div>item1</div>
+  <div>item2</div>
+  <div>item3</div>
+</div>
+
+
+<h3>flex-container</h3>
+
+<a href="#" class="btn-flex">버튼</a>
+<style>
+  .btn-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    background: yellow;
+  }
+</style>
+
+
+
+<div class="flex justify">
+  <div>item1</div>
+  <div>item2</div>
+  <div>item3</div>
+</div>
+
+<h2>flex</h2>
+<div class="flex wrap">
+  <div>item</div>
+  <div>item</div>
+  <div>item</div>
+  <div>item</div>
+  <div>item</div>
+  <div>item</div>
+  <div>item</div>
+  <div>item</div>
+  <div>item</div>
+  <div>item</div>
+</div>
+
+
+
+<div class="flex items">
+  <div>iem1</div>
+  <div>item2</div>
+  <div>item3</div>
+
+</div>
+
+
+<div class="flex direction">
+  <div>iem1</div>
+  <div>item2</div>
+  <div>item3</div>
+
+</div>
+
+
+
+
+<h2>none</h2>
+<div class="box4">
+</div>
+
+<h2>block</h2>
+<div class="=box1"></div>
+<div class="=box1"></div>
+
+
+
+<style>
+  
+
+  .items div {
+    height: auto;
+  }
+  .justify {
+    display: flex;
+    border: 5px solid red;
+    justify-content: center;
+  }
+  .wrap {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .direction {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex {
+    display: flex;
+    gap: 10px;
+    border: 5px solid lavender;
+  }
+  .flex div {
+    /*min-width: 100px;*/
+    height: 100px;
+    margin: 20px;
+    background: lightgreen;
+  }
+  .items {
+    display: flex;
+    height: 300px;
+    align-items: center;
+  }
+
+  .box4 {
+    display: none;
+    width: 100px;
+    height: 100px;
+    background: lightgray;
+  }
+
+  .box1 {
+    width: 100px;
+    height: 100px;
+    background: lightcoral;
+  }
+
+</style>
+
+<h2>inline-block</h2>
+<a href="#" class="box3">menu1</a>
+<a href="#" class="box3">menu1</a>
+<a href="#" class="box3">menu1</a>
+<style>
+  .box3 {
+    /* block: 가로세로 사이즈 셋팅 가능*/
+    /*inline : 옆으로 배치*/
+
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    background: lightgreen;
+    text-align: center;
+    line-height: 50px;
+  }
+  </style>
+
+<h2>inline(글자 한개)</h2>
+<span class="box1"></span>
+<span class="box2">글자</span>
+<span class="box2">글자</span>
+<style>
+  /* --inline : 가로, 세로값 안 들어감 --*/
+  .box2{
+    width: 100px;
+    height: 100px;
+    background: aqua;
+  }
+</style>
+</body>
+</html>

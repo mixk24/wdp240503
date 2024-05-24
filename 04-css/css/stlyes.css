@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Danfo&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+;
+
+/* 기본 셋팅 값 : reset */
+/*mobile*/
+* {
+margin: 0;
+padding: 0;
+font-family: 'Noto Sans KR', sans-serif;
+font-size: 16px;
+font-family: 'noto sans kr', sans-serif;
+}
+
+/* chrome 브러우저의 폰트 사이즈 기본값은 16px이다. */
+
+/*desktop*/
+@media only screen and (min-width:600px){
+    *{
+        font-size: 14px;
+    }
+}
+main {
+    background-color: rgb(122, 28, 83);
+}
+header {
+background-color: rgb(86, 236, 186);
+}
+header #logo a {
+    color: blue;
+    width: 200px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: normal;
+    font-size: 1.875em;
+}
+#header #logo img {
+    margin-top: -5px;
+}
+header h1 {
+    background-color: chartreuse;
+}
+/* 자식만 잡고 싶은 경우 */
+.gnb.depth1 > li >a {
+    font-size: 1.25em;
+}
+.depth2 li {
+    border: 1px solid green;
+}
+/* 자식만 잡고 싶은 경우 */
+.gnb .depth1 > li {
+    border: 1px solid blue;
+}
+.gnb .depth2 li {
+    border: 1px solid green;
+}
+/* util */
+.util .btn-menu {
+    width: 100px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+.form-search .inp-search:focus {
+   background-color: lightpink;
+}
+main-intro {
+    border: 1px solid red;
+}
+.bg-grey {
+    background-color: grey;
+}
+#gnb > ul > li {
+    border: 1px solid red;
+}
+
+
+.corp-area .list-corp li :first-child {
+    border: 1px solid yellow;
+}
+.corp-area .list-corp li:nth-last-child(2) {
+    border: 1px solid green;
+}
+.corp-area .list-corp li :last-child {
+    border: 1px solid yellow;
+}
+.corp-area li::before {
+content: ㅡㅡ;
+display: inline-block;
+width: 5px;
+height: 20px;
+margin: 0 10px;
+background-color: #333;
+}
+/* 첫번째 li */
+/* li 가상 before : display: none */
+.corp-area li:first-child::before {
+    display: ㅡㅡ;
+}
+
+
+
+.corp-area li::after {
+    content: ㅡㅡ;
+}
+.corp-area a ::before {
+    content: ㅡㅡ;
+}
+.corp-area .list-corp {
+    display: flex;
+}
+.depth1>li>a::before {
+content:'\f520';
+font-family: 'Line Awesome Free';
+font-weight: 900;
+}

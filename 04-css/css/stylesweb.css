@@ -57,6 +57,7 @@ header nav {
   position: relative;
 }
 #gnb .depth1 >li> a {
+  position: relative;
   display: flex;
   align-items: center;
   height: 100px;
@@ -66,13 +67,39 @@ header nav {
 #gnb .depth1 > li> a:hover {
   color: red;
   font-weight: bold;
+ /* border-bottom: 2px solid red;*/
+}
+
+#gnb .depth1 > li> a:hover:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: red;
+}
+#gnb .depth1 >li:hover .depth2 {
+  display: block;
 }
 #gnb .depth2 {
+  display: none;
   position: absolute;
   top: 100px;
   left: 0;
-  z-index: 1;
+  width: 100%;
 
+}
+#gnb .depth2 li a {
+  display: block;
+  padding: 10px 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+#gnb .depth2 li a:hover {
+  color: red;
 }
 .slide{
   overflow: hidden;

@@ -64,13 +64,13 @@ header nav {
   padding: 0 20px;
 }
 
-#gnb .depth1 > li> a:hover {
+#gnb .depth1 > li:hover> a {
   color: red;
   font-weight: bold;
  /* border-bottom: 2px solid red;*/
 }
 
-#gnb .depth1 > li> a:hover:after{
+#gnb .depth1 > li:hover> a:after{
   content: '';
   position: absolute;
   bottom: 0;
@@ -80,7 +80,7 @@ header nav {
   height: 2px;
   background: red;
 }
-#gnb .depth1 >li:hover .depth2 {
+#gnb .depth1:hover >li .depth2 {
   display: block;
 }
 #gnb .depth2 {
@@ -89,6 +89,7 @@ header nav {
   top: 100px;
   left: 0;
   width: 100%;
+  background: #fff;
 
 }
 #gnb .depth2 li a {

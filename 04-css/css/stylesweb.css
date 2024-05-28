@@ -102,7 +102,22 @@ header nav {
 #gnb .depth2 li a:hover {
   color: red;
 }
+#gnb:hover .nav-bg  {
+display: block;
+}
+
+#gnb .nav-bg {
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background: white;
+}
 .slide{
+
+  
   overflow: hidden;
   position: relative;
   height: 300px;

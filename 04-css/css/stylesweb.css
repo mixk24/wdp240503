@@ -38,6 +38,12 @@ margin-left: 10px;
 font-family: 'Line Awesome Free';
     font-weight: 900;
 }
+.btn-more {
+  position: absolute;
+ top: -100;
+  right: 0;
+
+}
 .wrap {
   width: 1200px;
   /* block 요소, 나 자신을 가운데 정렬하고 싶을 때 */
@@ -168,8 +174,8 @@ main {display: flex;
 }
 
 .sec-g{
-  display: flex;
-  padding: 170px 0 ;
+
+  padding: 70px 0 ;
 }
 .sec-g .sec-tit {
   display: inline-block;
@@ -183,6 +189,9 @@ main {display: flex;
 .sec-g .sec-tit span {
   color: #007aff;
 }
+.sec-g.sec-cont {
+  position: relative;
+}
 
 .sec-business .sec-cont {
   display: flex;
@@ -193,12 +202,20 @@ main {display: flex;
 }
 .sec-business  .col-left img {
   width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: 20% 50%;
 }
 .sec-business .col-right {
   width: 50%;
 
 }
+.sec-g .sec-tit span {
+  color: #007aff;
+}
 .sec-business .sec-cont {
+  display: flex;
+  justify-content: space-between;
 
 
 }
@@ -213,7 +230,20 @@ font-weight: 700;
   color: #575757;
 }
 .sec-business .btn-wrap {
+  display: flex;
+  margin-top: 70px;
 
+}
+.sec-business .btn-wrap .btn-g {
+  width: 250px;
+}
+.sec-news .list-news {
+display: flex;
+justify-content: space-between;
+gap: 20px;
+}
+.sec-news .list-news li {
+  flex: 1;
 }
 /*main section { 
   flex-grow: 1;

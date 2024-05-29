@@ -8,11 +8,41 @@
   list-style: none;
 
 }
-
+/*공통클래스*/
+.bg-grey {
+  background: #f9f9f9;
+}
+.btn-g{
+  position: relative;
+  display: inline-flex;
+  min-width: 170px;
+  align-items: center;
+  padding: 16px 50px 12px 30px;
+  background: #fff;
+  border: 1px solid #d1d1d1;
+  border-radius: 30px;
+  color: #007aff;
+}
+.btn-g:hover {
+  border: 1px solid #007aff;
+  background: #007aff;
+  color: #fff;
+}
+.btn-arrow::after {
+content: '\f105';
+position: absolute;
+top: 50%;
+right: 20px;
+transform: translateY(-50%);
+margin-left: 10px;
+font-family: 'Line Awesome Free';
+    font-weight: 900;
+}
 .wrap {
   width: 1200px;
   /* block 요소, 나 자신을 가운데 정렬하고 싶을 때 */
   margin: 0 auto;
+  padding-bottom: 500px;
 }
 
 header {
@@ -117,7 +147,7 @@ display: block;
 }
 .slide{
 
-  
+
   overflow: hidden;
   position: relative;
   height: 300px;
@@ -133,20 +163,68 @@ display: block;
 }
 
 main {display: flex;
-  justify-content: space-between;
+ flex-direction: column;
   gap: 20px;
 }
 
-main section { 
-  /*flex-grow: 1;
+.sec-g{
+  display: flex;
+  padding: 170px 0 ;
+}
+.sec-g .sec-tit {
+  display: inline-block;
+  margin-bottom: 50px;
+  font-style: 50px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 5px  solid #007aff;
+
+}
+.sec-g .sec-tit span {
+  color: #007aff;
+}
+
+.sec-business .sec-cont {
+  display: flex;
+  justify-content: space-between;
+}
+.sec-business  .col-left {
+  width: 50%;
+}
+.sec-business  .col-left img {
+  width: 100%;
+}
+.sec-business .col-right {
+  width: 50%;
+
+}
+.sec-business .sec-cont {
+
+
+}
+
+.sec-business .text-wrap .tit{
+  margin-bottom: 20px;
+font-size: 40px;
+font-weight: 700;
+}
+.sec-business .text-wrap .txt {
+  font-size: 18px;
+  color: #575757;
+}
+.sec-business .btn-wrap {
+
+}
+/*main section { 
+  flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: 0;*/
+  flex-basis: 0;
   flex: 110;
-  /*width: 32%;*/
+  width: 32%;
   flex-grow: 1;
   height: 300px;
   border: 1px solid red;
-}
+}*/
 
 footer {
   display: flex;

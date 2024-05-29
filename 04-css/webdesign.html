@@ -3,11 +3,12 @@
   <link>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/stylesweb.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="./js/script.js"></script>
   </head>
   <body>
     <div class="wrap">
@@ -49,6 +50,16 @@
         </nav>
       </header>
       <div class="swiper mySwiper">
+        <div class="slide txt">
+        <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi a natus voluptatibus nisi sapiente optio expedita iste tempore cupiditate, dolor neque voluptates porro perferendis deleniti quis commodi, assumenda, accusantium necessitatibus.
+
+        </strong>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit harum molestias corrupti officia sapiente nihil quam. Praesentium nesciunt itaque pariatur blanditiis, mollitia deleniti saepe dignissimos explicabo voluptatem possimus nemo commodi!
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, nulla ex iste assumenda quas esse asperiores labore veniam repellendus facilis fugit sequi accusantium inventore earum consequuntur ab. A, ullam perspiciatis.
+
+        </p>
+        <a href="#">자세히 보기</a>
+      </div>
         <div class="swiper-wrapper">
           <div class="swiper-slide">Slide 1</div>
           <div class="swiper-slide">Slide 2</div>
@@ -77,9 +88,39 @@
         });
       </script>
       <main>
-        <section>공지사항</section>
-        <section>배너</section>
-        <section>바로가기</section>
+          <section class="sec-g sec-business">
+            <h2 class="sec-tit"><span>웰컴복지재단</span>의 복지사업</h2>
+            <div class="sec-cont">
+              <div class="col-left">
+                <img src="" alt="">
+              </div>
+              <div class="col-right">
+                <div class="text-wrap">
+                  <h3>아동복지사업</h3>
+                  <p>
+                    지역아동센터의 원활한 운영을 위해 재단의 예산 육성합니다.
+                  </p>
+                </div>
+              </div>
+              <div class="button-wrap">
+                <a class="btn-g btn-arrow" href="#">지역아동센터사업</a>
+                <a class="btn-g btn-arrow" href="#">우리동네키움센터</a>
+                <a class="btn-g btn-arrow" href="#">어린이집사업</a>
+              </div>
+  
+            </div>
+          </section>
+  
+       
+          <section class="sec-g sec-news">
+            <h2 class="sec-tit"><span>웰컴</span>뉴스</h2>
+            <div class="sec-cont"></div>
+          </section>
+        
+          <section class="sec-g sec-bg-grey">
+            <h2 class="sec-tit"><span>공지</span>사항</h2>
+            <div class="sec-cont"></div>
+          </section>
       </main>
       <footer>
         <div>로고</div>

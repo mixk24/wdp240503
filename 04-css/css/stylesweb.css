@@ -245,6 +245,9 @@ gap: 20px;
 .sec-news .list-news li {
   flex: 1;
 }
+.sec-news .list-news img {
+  width: 100%;
+}
 /*main section { 
   flex-grow: 1;
   flex-shrink: 1;
